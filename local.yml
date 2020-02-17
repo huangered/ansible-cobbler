@@ -6,6 +6,6 @@
   tasks:
     - name: download
       file:
-        path: /etc/foo.conf
+        path: foo.conf
         state: touch
         mode: u=rw,g=r,o=r
