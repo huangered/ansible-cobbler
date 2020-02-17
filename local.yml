@@ -1,0 +1,11 @@
+---
+- name: test
+  hosts: local
+  connection: local
+  
+  tasks:
+    - name: download
+      file:
+        path: /etc/foo.conf
+        state: touch
+        mode: u=rw,g=r,o=r
